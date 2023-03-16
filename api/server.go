@@ -43,6 +43,7 @@ func NewServer(config util.Config, store db.Store) (*Server, error) {
 func (server *Server) setupRouter() {
 	router := gin.Default()
 
+	router.GET("/", server.welcome)
 	router.POST("/users", server.createUser)
 	router.POST("/users/login", server.loginUser)
 
