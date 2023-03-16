@@ -143,3 +143,7 @@ func (server *Server) loginUser(ctx *gin.Context) {
 	}
 	ctx.JSON(http.StatusOK, rsp)
 }
+
+func (server *Server) welcome(ctx *gin.Context) {
+	ctx.JSON(http.StatusOK, "Welcome to first project!")
+}
