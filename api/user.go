@@ -145,5 +145,5 @@ func (server *Server) loginUser(ctx *gin.Context) {
 }
 
 func (server *Server) welcome(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, "Welcome to first project!")
+	ctx.JSON(http.StatusOK, "Hello Cerebral!")
 }
